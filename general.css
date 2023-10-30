@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.aplication-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.10);
+  padding: 10px;
+  max-width: 550px; /* Maximum width when the page is open in full */
+  width: 100%; /* Default width that fills the available space */
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .aplication-container {
+    max-width: 400px; /* Width when the page is smaller than 800px */
+  }
+}
+
+@media (max-width: 600px) {
+  .aplication-container {
+    max-width: 300px; /* Width when the page is smaller than 600px */
+  }
+}
+
+@media (max-width: 400px) {
+  .aplication-container {
+    max-width: 200px; /* Width when the page is smaller than 400px */
+  }
+}
+
+.line {
+  background-color: rgb(202, 202, 202);
+  height: 1px;
+}
